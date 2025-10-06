@@ -1,0 +1,111 @@
+Namespace(agent='SFT', scenario='class', stream_split='exp', data='har', encoder='CNN', head='Linear', criterion='CE', ncm_classifier=False, norm='LN', input_norm='IN', runs=1, epochs=20, batch_size=32, lr=0.001, lradj='step15', early_stop=True, patience=20, weight_decay=0, dropout=0, feature_dim=128, n_layers=4, tune=False, debug=True, seed=1234, device='cpu', verbose=True, exp_start_time=None, fix_order=False, cf_matrix=True, tsne=False, tsne_g=True, er_mode='task', mem_budget=0.05, buffer_tracker=False, der_plus=False, er_sub_type='part', teacher_eval=False, lambda_kd_lwf=1, lambda_kd_fmap=0.01, fmap_kd_metric='dtw', lambda_protoAug=100, adaptive_weight=False, lambda_impt=10000, ewc_mode='separate', aser_k=3, aser_type='asvm', aser_n_smp_cls=4, mc_retrieve=False, beta_lr=0.0001, lambda_beta=1, epochs_g=500, lr_g=0.001, recon_wt=0.1, mnemonics_epochs=1, mnemonics_lr=1e-05, start_noise=True, save_mode=0, n_samples_to_plot=5, augment_batch=False, visual_syn_feat=True, iterations_per_layer=100, inversion_lr=0.01, inchannel_scale=10, xchannel_scale=1, feat_scale=1, k_freq=-1, regularize_freq_on_feat=False, exp_path='./result/exp/debug\\CNN_har\\SFT_LN_Oct-06-14-57-20')
+
+ ######## exp tasks, Run 0, cls_order :[2, 1, 5, 0, 4, 3] ########
+Create exp stream : 3 tasks,  classes order [2, 1, 5, 0, 4, 3] 
+Input shape (L, D): (128, 9)
+Training set size: 5952; Val set size: 664; Test set size: 2947
+
+--> Task 0: 2 classes in total
+Epoch 1/20: Accuracy = 0.11961332708597183, Loss = 95.75358851674642
+Epoch 2/20: Accuracy = 0.0003242317761760205, Loss = 100.0
+Epoch 3/20: Accuracy = 0.008811778388917446, Loss = 99.82057416267942
+Epoch 4/20: Accuracy = 0.023285148665308952, Loss = 99.28229665071771
+Epoch 5/20: Accuracy = 0.00013541721273213625, Loss = 100.0
+Epoch 6/20: Accuracy = 4.1841478378046304e-05, Loss = 100.0
+Epoch 7/20: Accuracy = 9.337351002614014e-06, Loss = 100.0
+Epoch 8/20: Accuracy = 6.323580237221904e-06, Loss = 100.0
+Epoch 9/20: Accuracy = 4.712020199804101e-06, Loss = 100.0
+Epoch 10/20: Accuracy = 4.367634574009571e-06, Loss = 100.0
+Epoch 11/20: Accuracy = 3.5081993701169267e-06, Loss = 100.0
+Epoch 12/20: Accuracy = 3.1263800792658003e-06, Loss = 100.0
+Epoch 13/20: Accuracy = 2.807277951433207e-06, Loss = 100.0
+Epoch 14/20: Accuracy = 2.6097502541233553e-06, Loss = 100.0
+Epoch 15/20: Accuracy = 2.332643134650425e-06, Loss = 100.0
+Epoch 16/20: Accuracy = 2.209516196671757e-06, Loss = 100.0
+Epoch 17/20: Accuracy = 2.189627593907062e-06, Loss = 100.0
+Epoch 18/20: Accuracy = 2.171214873669669e-06, Loss = 100.0
+Epoch 19/20: Accuracy = 2.14872579817893e-06, Loss = 100.0
+Epoch 20/20: Accuracy = 2.1575142454821616e-06, Loss = 100.0
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 100.0, Test CE Loss == 7.326511877181474e-07 ;
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 99.10213243546578, Test CE Loss == 0.034996289759874344 ;
+
+--> Task 1: 4 classes in total
+Epoch 1/20: Accuracy = 0.7140255570411682, Loss = 75.02338634237606
+Epoch 2/20: Accuracy = 0.006668667308986187, Loss = 99.76613657623948
+Epoch 3/20: Accuracy = 4.117745629628189e-05, Loss = 100.0
+Epoch 4/20: Accuracy = 2.422464058327023e-05, Loss = 100.0
+Epoch 5/20: Accuracy = 1.9638880985439755e-05, Loss = 100.0
+Epoch 6/20: Accuracy = 1.6775091353338212e-05, Loss = 100.0
+Epoch 7/20: Accuracy = 1.4491074580291752e-05, Loss = 100.0
+Epoch 8/20: Accuracy = 1.2758795492118225e-05, Loss = 100.0
+Epoch 9/20: Accuracy = 1.1231815733481199e-05, Loss = 100.0
+Epoch 10/20: Accuracy = 1.0098180609929841e-05, Loss = 100.0
+Epoch 11/20: Accuracy = 9.086393220059108e-06, Loss = 100.0
+Epoch 12/20: Accuracy = 8.28123029350536e-06, Loss = 100.0
+Epoch 13/20: Accuracy = 7.593930604343768e-06, Loss = 100.0
+Epoch 14/20: Accuracy = 6.952599505893886e-06, Loss = 100.0
+Epoch 15/20: Accuracy = 6.4201749410131015e-06, Loss = 100.0
+Epoch 16/20: Accuracy = 6.083007519919192e-06, Loss = 100.0
+Epoch 17/20: Accuracy = 6.081058927520644e-06, Loss = 100.0
+Epoch 18/20: Accuracy = 6.038850187906064e-06, Loss = 100.0
+Epoch 19/20: Accuracy = 5.9520734794205055e-06, Loss = 100.0
+Epoch 20/20: Accuracy = 5.903223154746229e-06, Loss = 100.0
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 0.0, Test CE Loss == 13.604632377624512 ;
+Task 1: Accuracy == 100.0, Test CE Loss == 6.825393938925117e-06 ;
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 0.0, Test CE Loss == 13.200705528259277 ;
+Task 1: Accuracy == 97.48305905130688, Test CE Loss == 0.07240746915340424 ;
+
+--> Task 2: 6 classes in total
+Epoch 1/20: Accuracy = 5.080729007720947, Loss = 4.435107376283847
+Epoch 2/20: Accuracy = 0.4880024492740631, Loss = 76.93744164332401
+Epoch 3/20: Accuracy = 0.3360949456691742, Loss = 85.7609710550887
+Epoch 4/20: Accuracy = 0.2167264223098755, Loss = 90.98972922502334
+Epoch 5/20: Accuracy = 0.1265115886926651, Loss = 95.14472455648925
+Epoch 6/20: Accuracy = 0.09739266335964203, Loss = 95.75163398692811
+Epoch 7/20: Accuracy = 0.042571861296892166, Loss = 98.36601307189542
+Epoch 8/20: Accuracy = 0.030864832922816277, Loss = 98.83286647992531
+Epoch 9/20: Accuracy = 0.017176751047372818, Loss = 99.53314659197012
+Epoch 10/20: Accuracy = 0.009847727604210377, Loss = 99.76657329598507
+Epoch 11/20: Accuracy = 0.01717967912554741, Loss = 99.48646125116713
+Epoch 12/20: Accuracy = 0.02310977503657341, Loss = 99.11297852474323
+Epoch 13/20: Accuracy = 0.020170986652374268, Loss = 99.34640522875817
+Epoch 14/20: Accuracy = 0.002626921981573105, Loss = 100.0
+Epoch 15/20: Accuracy = 0.0008326181559823453, Loss = 100.0
+Epoch 16/20: Accuracy = 0.0005249542300589383, Loss = 100.0
+Epoch 17/20: Accuracy = 0.00027671875432133675, Loss = 100.0
+Epoch 18/20: Accuracy = 0.0002425872371532023, Loss = 100.0
+Epoch 19/20: Accuracy = 0.0002241139009129256, Loss = 100.0
+Epoch 20/20: Accuracy = 0.00021030775678809732, Loss = 100.0
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 0.0, Test CE Loss == 15.551063537597656 ;
+Task 1: Accuracy == 0.0, Test CE Loss == 12.27184772491455 ;
+Task 2: Accuracy == 94.56066945606695, Test CE Loss == 0.16418960690498352 ;
+Accuracy matrix of all tasks:
+[[100.     0.     0.  ]
+ [  0.   100.     0.  ]
+ [  0.     0.    94.56]]
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 0.0, Test CE Loss == 15.262115478515625 ;
+Task 1: Accuracy == 0.0, Test CE Loss == 12.401070594787598 ;
+Task 2: Accuracy == 91.49560117302052, Test CE Loss == 0.2724452614784241 ;
+Accuracy matrix of all tasks:
+[[99.1   0.    0.  ]
+ [ 0.   97.48  0.  ]
+ [ 0.    0.   91.5 ]]
+
+ Finish Run 0, running time 114.80582761764526 sec
+Valid Set:
+ Avg_End_Acc [31.52] Avg_End_Fgt [100.] Avg_Cur_Acc [98.19] Avg_Acc [[100.    50.    31.52]] Avg_Bwtp [0.] 
+
+Test Set:
+Avg_End_Acc [30.5] Avg_End_Fgt [98.29] Avg_Cur_Acc [96.03] Avg_Acc [[99.1  48.74 30.5 ]] Avg_Bwtp [0.]
