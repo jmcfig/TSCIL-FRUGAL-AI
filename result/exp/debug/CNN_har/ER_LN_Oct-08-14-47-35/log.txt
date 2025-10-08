@@ -1,0 +1,137 @@
+Namespace(agent='ER', scenario='class', stream_split='exp', data='har', encoder='CNN', head='Linear', criterion='CE', ncm_classifier=False, norm='LN', input_norm='IN', runs=1, epochs=50, batch_size=32, lr=0.001, lradj='step15', early_stop=True, patience=20, weight_decay=0, dropout=0, feature_dim=128, n_layers=4, tune=False, debug=True, seed=0, device='cuda', verbose=True, exp_start_time=None, fix_order=False, cf_matrix=True, tsne=False, tsne_g=True, er_mode='task', mem_budget=0.1, buffer_tracker=False, der_plus=False, er_sub_type='part', teacher_eval=False, lambda_kd_lwf=1, lambda_kd_fmap=0.01, fmap_kd_metric='dtw', lambda_protoAug=100, adaptive_weight=False, lambda_impt=10000, ewc_mode='separate', aser_k=3, aser_type='asvm', aser_n_smp_cls=4, mc_retrieve=False, beta_lr=0.0001, lambda_beta=1, epochs_g=500, lr_g=0.001, recon_wt=0.1, mnemonics_epochs=1, mnemonics_lr=1e-05, start_noise=True, save_mode=0, n_samples_to_plot=5, augment_batch=False, visual_syn_feat=True, iterations_per_layer=100, inversion_lr=0.01, inchannel_scale=10, xchannel_scale=1, feat_scale=1, k_freq=-1, regularize_freq_on_feat=False, exp_path='./result/exp/debug\\CNN_har\\ER_LN_Oct-08-14-47-35')
+
+ ######## exp tasks, Run 0, cls_order :[5, 2, 1, 3, 0, 4] ########
+Create exp stream : 3 tasks,  classes order [5, 2, 1, 3, 0, 4] 
+Input shape (L, D): (128, 9)
+Training set size: 5952; Val set size: 664; Test set size: 2947
+buffer has 732 slots
+ER mode: task, NCM classifier: False
+
+--> Task 0: 2 classes in total
+Epoch 1/50: Accuracy = 96.25064201335388, Loss = 0.11452019214630127
+Epoch 2/50: Accuracy = 99.94863893168979, Loss = 0.002418199321255088
+Epoch 3/50: Accuracy = 99.94863893168979, Loss = 0.0035355279687792063
+Epoch 4/50: Accuracy = 100.0, Loss = 6.593412399524823e-05
+Epoch 5/50: Accuracy = 99.69183359013869, Loss = 0.009520317427814007
+Epoch 6/50: Accuracy = 100.0, Loss = 0.0003657990018837154
+Epoch 7/50: Accuracy = 100.0, Loss = 2.138118816219503e-06
+Epoch 8/50: Accuracy = 100.0, Loss = 2.2751401047571562e-06
+Epoch 9/50: Accuracy = 100.0, Loss = 2.1530834146687994e-06
+Epoch 10/50: Accuracy = 100.0, Loss = 2.0040756680828054e-06
+Epoch 11/50: Accuracy = 100.0, Loss = 1.8627013105287915e-06
+Epoch 12/50: Accuracy = 100.0, Loss = 1.7425065834686393e-06
+Epoch 13/50: Accuracy = 100.0, Loss = 1.631830400583567e-06
+Epoch 14/50: Accuracy = 100.0, Loss = 1.53671965108515e-06
+Epoch 15/50: Accuracy = 100.0, Loss = 1.4540776192006888e-06
+Epoch 16/50: Accuracy = 100.0, Loss = 1.4202863667378551e-06
+Epoch 17/50: Accuracy = 100.0, Loss = 1.3948827017884469e-06
+Epoch 18/50: Accuracy = 100.0, Loss = 1.3899317536925082e-06
+Epoch 19/50: Accuracy = 100.0, Loss = 1.3898549013902084e-06
+Epoch 20/50: Accuracy = 100.0, Loss = 1.3705442825084901e-06
+Epoch 21/50: Accuracy = 100.0, Loss = 1.359957082058827e-06
+Epoch 22/50: Accuracy = 100.0, Loss = 1.3518872492568335e-06
+Early stopping
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 100.0, Test CE Loss == 1.1698172102114768e-06 ;
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 97.70114942528735, Test CE Loss == 0.1260427087545395 ;
+
+--> Task 1: 4 classes in total
+Epoch 1/50: Accuracy = 72.49736564805059, Loss = 1.2219953536987305
+Epoch 2/50: Accuracy = 90.83245521601685, Loss = 0.44506460428237915
+Epoch 3/50: Accuracy = 96.31190727081137, Loss = 0.19962166249752045
+Epoch 4/50: Accuracy = 98.36670179135932, Loss = 0.06541254371404648
+Epoch 5/50: Accuracy = 99.20969441517387, Loss = 0.04624411091208458
+Epoch 6/50: Accuracy = 99.63119072708115, Loss = 0.019848914816975594
+Epoch 7/50: Accuracy = 99.78925184404636, Loss = 0.011405091732740402
+Epoch 8/50: Accuracy = 99.78925184404636, Loss = 0.0110009191557765
+Epoch 9/50: Accuracy = 99.94731296101159, Loss = 0.005592127796262503
+Epoch 10/50: Accuracy = 100.0, Loss = 0.0018358658999204636
+Epoch 11/50: Accuracy = 99.94731296101159, Loss = 0.003906484693288803
+Epoch 12/50: Accuracy = 100.0, Loss = 0.0020018168725073338
+Epoch 13/50: Accuracy = 100.0, Loss = 0.0004926318651996553
+Epoch 14/50: Accuracy = 100.0, Loss = 0.00025846908101812005
+Epoch 15/50: Accuracy = 100.0, Loss = 5.661433169734664e-05
+Epoch 16/50: Accuracy = 100.0, Loss = 4.598799569066614e-05
+Epoch 17/50: Accuracy = 100.0, Loss = 4.5208013034425676e-05
+Epoch 18/50: Accuracy = 100.0, Loss = 4.400122634251602e-05
+Epoch 19/50: Accuracy = 100.0, Loss = 4.30068357673008e-05
+Epoch 20/50: Accuracy = 100.0, Loss = 4.6931869292166084e-05
+Epoch 21/50: Accuracy = 100.0, Loss = 3.946511787944473e-05
+Epoch 22/50: Accuracy = 100.0, Loss = 4.071547300554812e-05
+Epoch 23/50: Accuracy = 100.0, Loss = 3.930530874640681e-05
+Epoch 24/50: Accuracy = 100.0, Loss = 3.589138577808626e-05
+Epoch 25/50: Accuracy = 100.0, Loss = 3.7923466152278706e-05
+Epoch 26/50: Accuracy = 100.0, Loss = 3.6361092497827485e-05
+Epoch 27/50: Accuracy = 100.0, Loss = 3.721084794960916e-05
+Epoch 28/50: Accuracy = 100.0, Loss = 3.847004336421378e-05
+Epoch 29/50: Accuracy = 100.0, Loss = 3.545677100191824e-05
+Epoch 30/50: Accuracy = 100.0, Loss = 3.370893682586029e-05
+Epoch 31/50: Accuracy = 100.0, Loss = 3.45105909218546e-05
+Epoch 32/50: Accuracy = 100.0, Loss = 3.524564817780629e-05
+Epoch 33/50: Accuracy = 100.0, Loss = 3.197991827619262e-05
+Early stopping
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 93.54838709677419, Test CE Loss == 0.3126099109649658 ;
+Task 1: Accuracy == 98.58490566037736, Test CE Loss == 0.020048094913363457 ;
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 85.26645768025078, Test CE Loss == 0.9732358455657959 ;
+Task 1: Accuracy == 94.07484407484408, Test CE Loss == 0.22331203520298004 ;
+
+--> Task 2: 6 classes in total
+Epoch 1/50: Accuracy = 27.764594209776934, Loss = 3.9410789012908936
+Epoch 2/50: Accuracy = 91.88419553868059, Loss = 0.7572048902511597
+Epoch 3/50: Accuracy = 97.62695775984812, Loss = 0.11260436475276947
+Epoch 4/50: Accuracy = 99.38300901756051, Loss = 0.04195782169699669
+Epoch 5/50: Accuracy = 99.81015662078785, Loss = 0.011969232000410557
+Epoch 6/50: Accuracy = 99.95253915519696, Loss = 0.007310146000236273
+Epoch 7/50: Accuracy = 100.0, Loss = 0.005133078899234533
+Epoch 8/50: Accuracy = 100.0, Loss = 0.0014947113813832402
+Epoch 9/50: Accuracy = 100.0, Loss = 0.0012738415971398354
+Epoch 10/50: Accuracy = 100.0, Loss = 0.0003063732001464814
+Epoch 11/50: Accuracy = 100.0, Loss = 0.00022297688701655716
+Epoch 12/50: Accuracy = 100.0, Loss = 0.000176949382876046
+Epoch 13/50: Accuracy = 100.0, Loss = 0.00015281120431609452
+Epoch 14/50: Accuracy = 100.0, Loss = 0.00013040436897426844
+Epoch 15/50: Accuracy = 100.0, Loss = 0.00011952291970374063
+Epoch 16/50: Accuracy = 100.0, Loss = 0.00010415479482617229
+Epoch 17/50: Accuracy = 100.0, Loss = 0.00010697953985072672
+Epoch 18/50: Accuracy = 100.0, Loss = 0.00010963655222440138
+Epoch 19/50: Accuracy = 100.0, Loss = 0.00010535118781263009
+Epoch 20/50: Accuracy = 100.0, Loss = 0.00010785529593704268
+Epoch 21/50: Accuracy = 100.0, Loss = 0.00010307814227417111
+Epoch 22/50: Accuracy = 100.0, Loss = 9.74739232333377e-05
+Epoch 23/50: Accuracy = 100.0, Loss = 0.00010285435564583167
+Epoch 24/50: Accuracy = 100.0, Loss = 0.00010008195386035368
+Epoch 25/50: Accuracy = 100.0, Loss = 0.00010044452210422605
+Epoch 26/50: Accuracy = 100.0, Loss = 9.538739686831832e-05
+Early stopping
+
+ ======== Evaluate on valid set ========
+Task 0: Accuracy == 91.70506912442397, Test CE Loss == 0.30891552567481995 ;
+Task 1: Accuracy == 84.43396226415094, Test CE Loss == 0.7548912167549133 ;
+Task 2: Accuracy == 100.0, Test CE Loss == 0.0019100926583632827 ;
+Accuracy matrix of all tasks:
+[[100.     0.     0.  ]
+ [ 93.55  98.58   0.  ]
+ [ 91.71  84.43 100.  ]]
+
+ ======== Evaluate on test set ========
+Task 0: Accuracy == 82.13166144200626, Test CE Loss == 0.9732301235198975 ;
+Task 1: Accuracy == 80.35343035343035, Test CE Loss == 0.7786462903022766 ;
+Task 2: Accuracy == 96.20622568093385, Test CE Loss == 0.12590104341506958 ;
+Accuracy matrix of all tasks:
+[[97.7   0.    0.  ]
+ [85.27 94.07  0.  ]
+ [82.13 80.35 96.21]]
+
+ Finish Run 0, running time 1144.7148241996765 sec
+Valid Set:
+ Avg_End_Acc [92.05] Avg_End_Fgt [11.22] Avg_Cur_Acc [99.53] Avg_Acc [[100.    96.06  92.05]] Avg_Bwtp [0.] 
+
+Test Set:
+Avg_End_Acc [86.23] Avg_End_Fgt [14.65] Avg_Cur_Acc [95.99] Avg_Acc [[97.7  89.67 86.23]] Avg_Bwtp [0.]
