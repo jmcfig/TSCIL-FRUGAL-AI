@@ -25,6 +25,8 @@ This repository was developed as part of a short research project on *frugal AI 
 ├── environment.yml         # Full Conda environment specification
 ├── their_README.md         # Original README from the TSCIL authors
 └── data/UCI HAR Dataset/           # Preloaded dataset folder (UCI-HAR)
+└── exp_logs/               # Directory where experiment logs and results are saved
+└── paper.pdf             # Our project report
 ```
 
 ---
